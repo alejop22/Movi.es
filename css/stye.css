@@ -1,0 +1,4 @@
+.nav__container {
+    display: grid;
+    grid-template: 100px 100px 100px 1fr / 200px;
+}
