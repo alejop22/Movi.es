@@ -51,5 +51,67 @@ body {
 
 .nav__container {
     display: grid;
-    grid-template: 100px 100px 100px 1fr / 200px;
+    grid-template: 80px 80px 70px 396px/ 90px;
+    width: 90px;
+    background-color: #fddb3a;
+}
+
+.nav__container .home {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav__container .home img {
+    height: 30px;
+}
+
+.nav__container .home p {
+    margin: 0;
+}
+
+.nav__container .trending {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav__container .trending img {
+    height: 30px;
+}
+
+.nav__container .trending p {
+    margin: 0;
+}
+
+.nav__container .likes {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav__container .likes img {
+    height: 30px;
+}
+
+.nav__container .likes p {
+    margin: 0;
+}
+
+.nav__container .tools {
+    text-align: center;
+    padding: 290px 10px 10px 10px;
+    font-weight: bold;
+}
+
+.nav__container .tools img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav__container .tools p {
+    margin: 0;
+    cursor: pointer;
 }
