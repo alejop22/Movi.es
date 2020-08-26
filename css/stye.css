@@ -129,11 +129,19 @@ nav {
     position: relative;
 }
 
-.actualidad-1 .overlay {
+.section__container .actualidad-2 {
+    position: relative;
+}
+
+.section__container .actualidad-3 {
+    position: relative;
+}
+
+.overlay-1 {
     position: absolute;
     background-color: rgba(236, 240, 12, 0.4);
-    left: 10px;
-    right: 134px;
+    left: 50px;
+    right: 94px;
     top: 130px;
     bottom: 10px;
     display: none;
@@ -144,20 +152,58 @@ nav {
     cursor: pointer;
 }
 
-.actualidad-1:hover .overlay {
+.overlay-2 {
+    position: absolute;
+    background-color: rgba(236, 240, 12, 0.4);
+    left: 66px;
+    right: 67px;
+    top: 130px;
+    bottom: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.overlay-3 {
+    position: absolute;
+    background-color: rgba(236, 240, 12, 0.4);
+    left: 52px;
+    right: 52px;
+    top: 130px;
+    bottom: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.actualidad-1:hover .overlay-1 {
+    display: flex;
+}
+
+.actualidad-2:hover .overlay-2 {
+    display: flex;
+}
+
+.actualidad-3:hover .overlay-3 {
     display: flex;
 }
 
 .section__container .actualidad-1 img{
     height: 160px;
-    padding-left: 10px;
+    padding-left: 50px;
     cursor: pointer;
 }
 
 .section__container .actualidad-1 p {
     margin: 0 0 10px 0;
     font-weight: bold;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 
 .section__container .actualidad-2 {
@@ -167,6 +213,7 @@ nav {
 .section__container .actualidad-2 img {
     padding: 28px 0 0 0;
     height: 160px;
+    width: 266.656px;
     cursor: pointer;
 }
 
@@ -177,4 +224,124 @@ nav {
 .section__container .actualidad-3 img {
     padding: 28px 0 0 0;
     height: 160px;
+    width: 293.750px;
+    cursor: pointer;
+}
+
+.critica-1:hover .overlay-1 {
+    display: flex;
+}
+
+.critica-2:hover .overlay-2 {
+    display: flex;
+}
+
+.critica-3:hover .overlay-3 {
+    display: flex;
+}
+
+.section__container .critica-1 {
+    position: relative;
+}
+
+.section__container .critica-2 {
+    position: relative;
+}
+
+.section__container .critica-3 {
+    position: relative;
+}
+
+.section__container .critica-1 img{
+    height: 160px;
+    width: 256px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.section__container .critica-1 p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.section__container .critica-2 {
+    text-align: center;
+}
+
+.section__container .critica-2 img {
+    padding: 28px 0 0 0;
+    width: 266.641px;
+    height: 160px;
+    cursor: pointer;
+}
+
+.section__container .critica-3 {
+    text-align: center;
+}
+
+.section__container .critica-3 img {
+    padding: 28px 0 0 0;
+    height: 160px;
+    cursor: pointer;
+}
+
+.noPerder-1:hover .overlay-1 {
+    display: flex;
+}
+
+.noPerder-2:hover .overlay-2 {
+    display: flex;
+}
+
+.noPerder-3:hover .overlay-3 {
+    display: flex;
+}
+
+.section__container .noPerder-1 {
+    position: relative;
+}
+
+.section__container .noPerder-2 {
+    position: relative;
+}
+
+.section__container .noPerder-3 {
+    position: relative;
+}
+
+.section__container .noPerder-1 img {
+    height: 160px;
+    height: 160px;
+    width: 256px;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.section__container .noPerder-1 p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.section__container .noPerder-2 {
+    text-align: center;
+}
+
+.section__container .noPerder-2 img {
+    cursor: pointer;
+    height: 160px;
+    width: 266.641px;
+    padding: 28px 0 0 0;
+}
+
+.section__container .noPerder-3 {
+    text-align: center;
+}
+
+.section__container .noPerder-3 img {
+    cursor: pointer;
+    height: 160px;
+    width: 293.750px;
+    padding: 28px 0 0 0;
 }
