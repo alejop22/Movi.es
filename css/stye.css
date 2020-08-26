@@ -116,9 +116,16 @@ body {
     cursor: pointer;
 }
 
+section {
+    display: grid;
+    grid-template-columns: repeat(auto,400px);
+}
 .section__container {
     display: grid;
-    grid-template: repeat(3, 200px) / repeat(3, 400px);
+    grid-template: repeat(3, minmax(100px, 200px)) / repeat(3, minmax(100px, 400px));
+    grid-template-areas: "actualidad-1 actualidad-2 actualidad-3"
+                         "critica-1 critica-2 critica-3"
+                         "noPerder-1 noPerder-2 noPerder-3";
 }
 
 nav {
@@ -127,14 +134,17 @@ nav {
 
 .section__container .actualidad-1 {
     position: relative;
+    grid-area: actualidad-1;
 }
 
 .section__container .actualidad-2 {
     position: relative;
+    grid-area: actualidad-2;
 }
 
 .section__container .actualidad-3 {
     position: relative;
+    grid-area: actualidad-3;
 }
 
 .overlay-1 {
@@ -242,14 +252,17 @@ nav {
 
 .section__container .critica-1 {
     position: relative;
+    grid-area: critica-1;
 }
 
 .section__container .critica-2 {
     position: relative;
+    grid-area: critica-2;
 }
 
 .section__container .critica-3 {
     position: relative;
+    grid-area: critica-3;
 }
 
 .section__container .critica-1 img{
@@ -300,14 +313,17 @@ nav {
 
 .section__container .noPerder-1 {
     position: relative;
+    grid-area: noPerder-1;
 }
 
 .section__container .noPerder-2 {
     position: relative;
+    grid-area: noPerder-2;
 }
 
 .section__container .noPerder-3 {
     position: relative;
+    grid-area: noPerder-3;
 }
 
 .section__container .noPerder-1 img {
@@ -344,4 +360,17 @@ nav {
     height: 160px;
     width: 293.750px;
     padding: 28px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .section__container {
+        grid-template-columns: 400px 400px;
+        grid-template-rows: repeat(6,200px);
+        grid-template-areas: "actualidad-1 actualidad 2"
+                             "actualidad-3 actualidad 3"
+                             "critica-1 critica-2"
+                             "critica-3 critica-3"
+                             "noPerder-1 noPerder-2"
+                             "noPerder-3 noPerder-3";
+    }
 }
